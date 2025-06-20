@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Kelontong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Manajemen Toko Kelontong</h1>
+
+    <form id="barang-form">
+      <input type="hidden" id="barangId">
+      <input type="text" id="nama" placeholder="Nama Barang" required>
+      <input type="number" id="stok" placeholder="Stok Barang" required>
+      <input type="number" id="harga" placeholder="Harga (Rp)" required>
+      <button type="submit">Simpan</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Stok</th>
+          <th>Harga</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="tabel-barang"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
